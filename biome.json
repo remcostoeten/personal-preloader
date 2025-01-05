@@ -27,34 +27,17 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
-      "trailingComma": "es5",
+      "trailingCommas": "es5",
       "semicolons": "asNeeded"
     }
   },
   "files": {
     "ignoreUnknown": true,
-    "endOfLine": "lf"
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/.next/**"]
   },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true
-  },
-  "imports": {
-    "sort": {
-      "enabled": true,
-      "order": [
-        "react",
-        "next",
-        "<THIRD_PARTY_MODULES>",
-        "",
-        "^@/components/(.*)$",
-        "^@/lib/(.*)$",
-        "^@/hooks/(.*)$",
-        "^@/styles/(.*)$",
-        "",
-        "^[./]"
-      ]
-    }
   }
-} 
+}
