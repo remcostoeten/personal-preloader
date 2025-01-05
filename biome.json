@@ -1,0 +1,60 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "error"
+      },
+      "style": {
+        "useBlockStatements": "error",
+        "useShorthandArrayType": "error"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "tab",
+    "indentWidth": 4,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingComma": "es5",
+      "semicolons": "asNeeded"
+    }
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "endOfLine": "lf"
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "imports": {
+    "sort": {
+      "enabled": true,
+      "order": [
+        "react",
+        "next",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^@/components/(.*)$",
+        "^@/lib/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/styles/(.*)$",
+        "",
+        "^[./]"
+      ]
+    }
+  }
+} 
